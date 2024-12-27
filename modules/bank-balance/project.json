@@ -1,0 +1,9 @@
+{
+  "name": "bank-balance",
+  "$schema": "../../node_modules/nx/schemas/project-schema.json",
+  "sourceRoot": "modules/bank-balance/src",
+  "projectType": "library",
+  "tags": [],
+  "// targets": "to see all targets run: nx show project bank-balance --web",
+  "targets": {}
+}

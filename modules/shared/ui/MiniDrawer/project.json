@@ -1,0 +1,9 @@
+{
+  "name": "MiniDrawer",
+  "$schema": "../../../../node_modules/nx/schemas/project-schema.json",
+  "sourceRoot": "modules/shared/ui/MiniDrawer/src",
+  "projectType": "library",
+  "tags": [],
+  "// targets": "to see all targets run: nx show project MiniDrawer --web",
+  "targets": {}
+}

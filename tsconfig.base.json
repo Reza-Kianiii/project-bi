@@ -1,0 +1,28 @@
+{
+  "compileOnSave": false,
+  "compilerOptions": {
+    "rootDir": ".",
+    "sourceMap": true,
+    "declaration": false,
+    "moduleResolution": "node",
+    "emitDecoratorMetadata": true,
+    "experimentalDecorators": true,
+    "importHelpers": true,
+    "target": "es2015",
+    "module": "esnext",
+    "lib": ["es2020", "dom"],
+    "skipLibCheck": true,
+    "skipDefaultLibCheck": true,
+    "baseUrl": ".",
+    "paths": {
+      "@bi/MiniDrawer": ["modules/shared/ui/MiniDrawer/src/index.ts"],
+      "@bi/bank-balance": ["modules/bank-balance/src/index.ts"],
+      "@bi/bi-redux-store": [
+        "modules/shared/utils/bi-redux-store/src/index.ts"
+      ],
+      "@bi/header": ["modules/shared/ui/header/src/index.ts"],
+      "@bi/widget": ["modules/shared/ui/widget/src/index.ts"]
+    }
+  },
+  "exclude": ["node_modules", "tmp"]
+}
