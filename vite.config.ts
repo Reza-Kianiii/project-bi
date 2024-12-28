@@ -12,7 +12,7 @@ export default defineConfig({
     host: 'localhost',
     proxy: {
       '/api': {
-        target: 'https://bi.edarisoft.ir/',
+        target: 'https://bi.edarisoft.ir',
         changeOrigin: true,
         secure: false,
       },

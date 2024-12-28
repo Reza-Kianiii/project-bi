@@ -3,10 +3,12 @@ import { createApi, fetchBaseQuery } from '@reduxjs/toolkit/query/react';
 // Define a service using a base URL and expected endpoints
 export const BankBalanceApi = createApi({
   reducerPath: 'BankBalance',
-  baseQuery: fetchBaseQuery({ baseUrl: 'https://bi.edarisoft.ir/api/' }),
+  baseQuery: fetchBaseQuery({
+    credentials: 'include',
+  }),
   endpoints: (builder) => ({
     getBankBalance: builder.query<any, void>({
-      query: () => `/accounting/bank-balance/`,
+      query: () => `/accounting/bank-operation-balance/?format=json`,
     }),
   }),
 });
