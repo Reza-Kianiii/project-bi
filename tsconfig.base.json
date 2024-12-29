@@ -16,7 +16,11 @@
     "baseUrl": ".",
     "paths": {
       "@bi/MiniDrawer": ["modules/shared/ui/MiniDrawer/src/index.ts"],
+      "@bi/accounting": ["modules/accounting/src/index.ts"],
       "@bi/bank-balance": ["modules/bank-balance/src/index.ts"],
+      "@bi/bank-operations-balance": [
+        "modules/accounting/src/lib/bank-operations-balance/src/index.ts"
+      ],
       "@bi/bi-redux-store": [
         "modules/shared/utils/bi-redux-store/src/index.ts"
       ],

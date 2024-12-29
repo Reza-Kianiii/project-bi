@@ -1,8 +1,9 @@
 // import NxWelcome from './nx-welcome';
-import { BankBalance } from '@bi/bank-balance';
+
 import { createBrowserRouter, RouterProvider } from 'react-router-dom';
 import { MiniDrawer } from '@bi/MiniDrawer';
 import { createTheme, ThemeProvider } from '@mui/material';
+import { BiModulesAccountingRoutes } from '@bi/accounting';
 // import { UiDrawer } from '@bi/shared';
 
 // import { UiDrawer } from '@bi/ui-drawer';
@@ -20,16 +21,16 @@ const router = createBrowserRouter(
   [
     {
       path: '/',
-      Component: MiniDrawer,
+      element: <MiniDrawer />,
       children: [
         {
-          path: 'bank-balance',
-          Component: BankBalance,
+          path: 'accounting',
+          children: BiModulesAccountingRoutes,
         },
       ],
     },
   ],
-  { basename: `/bi/` }
+  { basename: `/bi` }
 );
 
 export function App() {
